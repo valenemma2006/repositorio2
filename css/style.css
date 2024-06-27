@@ -1,0 +1,411 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+
+/* HEADER */
+
+header {
+    background-color: #00ADCF;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+
+}
+
+.encabezado{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+header h1 {
+    font-size: 90px;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    padding-left: 20px;
+}
+
+/* NAVEGACION */
+
+.navegacion{
+    width: 100%;
+    height: 70px;
+    background-color: #54B9CB;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 11;
+}
+
+.lista{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li{
+    border: 2px solid black;
+    margin: 5px;
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    transform: all 1.8;
+}
+
+nav ul li:hover{
+    transform: scale(1.1);
+}
+
+/* SEGUNDA SECTION  */
+
+.contacto{
+    background-color: #D1E7E0;
+    padding-bottom: 50px;
+}
+
+.contenedor{
+    max-width: 70%; /** Definimos el ancho del contenedor*/
+    max-height: 100%;
+    margin: 0 auto; /** Centramos el contenedor*/
+    background-color: #F3EED9;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.titulo h3{
+    text-align: center;
+    padding: 2%;
+    font-size: 40px; 
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+.titulo h5{
+    text-align: center;
+    padding-bottom: 1%;
+    font-size: 30px; 
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* INFORMACION DEL CONTENEDOR */
+
+.info{
+    font-size: 40px;
+}
+
+.info i {
+    font-size: 70px;
+    vertical-align: middle;
+    width: 0px;
+}
+
+.info h4{
+    padding-left: 150px;
+    font-size: 35px; 
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    display: inline;
+    margin-left: 10px;
+}
+
+.info p{
+    color: #106d92;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 150px;
+    font-size: 30px;
+}
+
+.info a{
+    color: #00A3D0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 150px;
+    font-size: 30px;
+}
+
+.info a:hover{
+    background-color: #D1E7E0;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #00ADCF;
+    padding: 40px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.infofooter{
+    display: flex;
+    flex-direction: column;
+}
+
+.infofooter h4, .redes h4{
+    font-size: 40px;
+    color: #0e3f52;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+
+.infofooter h5{
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}   
+
+.redes i{
+    font-size: 40px;
+    margin: 10px
+}
+
+.redes a:hover{
+    color: #0e3f52;
+}
+ 
+/* de 768px para bajo es para celular*/
+
+@media(max-width:768px){
+    header.encabezado{
+        height: 45px;
+    }
+        
+    header .encabezado h1{
+        font-size: 30px;
+    }
+
+    header .logo {
+        width: 60px;
+        height: 60px;
+        padding: 2px;
+    }
+
+    /* NAVEGACION */
+
+    .navegacion{
+        height: 30px;
+        font-size: 15px;
+        width: 100%;
+        height: 40px;
+    }
+
+    .navegacion ul{
+        display: flex;
+        align-items: center;
+    }
+
+    .navegacion ul li{
+        margin: 2px;
+        padding: 2px;
+        border: 1px solid black;
+        font-size: 18px;
+    }
+
+ /* MAIN SECTION CONTACTO */
+
+    main section .contenedor{
+        max-width: 70%; /** Definimos el ancho del contenedor*/ 
+    }
+
+    main section .titulo h3{
+        font-size: 25px;
+    }
+
+    main section .titulo h5{
+        font-size: 15px;
+        max-width: 65%;
+        margin: 0 auto;
+    }
+
+    /* MAIN SECTION INFO */
+
+    main section .info h4{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    main section .info p b{
+        font-size: 20px;
+    }
+
+    main section .info a{
+        font-size: 15px;
+        padding-left: 50px;
+    }
+
+    main section .info p{
+        font-size: 15px;
+        padding-left: 50px;
+    }
+
+    main section .info i{
+        font-size: 30px;   
+    }
+
+    /* FOOTER */
+
+    footer{
+        padding: 20px;
+    }
+    
+    .infofooter h4, .redes h4{
+        font-size: 25px;
+        margin-left: 15px;
+    }
+
+    .infofooter h5{
+        font-size: 20px;
+    }
+
+    .redes i{
+        font-size: 30px;
+        margin: 5px;
+    }
+
+}
+
+/* de 576px para abajo es para dispositivos pequeños */
+
+@media(max-width:576px){
+    
+    header .encabezado{
+        height: 45px;
+    }
+        
+    header .encabezado h1{
+        font-size: 30px;
+    }
+
+    header .logo {
+        width: 60px;
+        height: 60px;
+        padding: 2px;
+    }
+
+    /* NAVEGACION */
+
+    header .navegacion{
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .navegacion ul{
+        display: flex;
+        align-items: center;
+    }
+
+    .navegacion ul li{
+        margin: 2px;
+        padding: 2px;
+        border: 1px solid black;
+        font-size: 12px;
+    }
+
+ /* MAIN SECTION CONTACTO */
+
+    main section .contenedor{
+        max-width: 70%; /** Definimos el ancho del contenedor*/ 
+    }
+
+    main section .titulo h3{
+        font-size: 25px;
+    }
+
+    main section .titulo h5{
+        font-size: 15px;
+        max-width: 65%;
+        margin: 0 auto;
+    }
+
+    /* MAIN SECTION INFO */
+
+    main section .info h4{
+        font-size: 20px;
+        padding-left: 50px;
+    }
+
+    main section .info p b{
+        font-size: 15px;
+    }
+
+    main section .info a{
+        font-size: 15px;
+        padding-left: 50px;
+    }
+
+    main section .info p{
+        font-size: 15px;
+        padding-left: 50px;
+    }
+
+    main section .info i{
+        font-size: 30px;   
+    }
+
+    /* FOOTER */
+
+    footer{
+        padding: 20px;
+    }
+    
+    .infofooter h4, .redes h4{
+        font-size: 20px;
+        margin-left: 15px;
+    }
+
+    .infofooter h5{
+        font-size: 15px;
+    }
+
+    .redes i{
+        font-size: 25px;
+        margin: 5px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
